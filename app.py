@@ -173,7 +173,7 @@ def search_venues():
       "name": "The Dueling Pianos Bar",
       "num_upcoming_shows": 0,
     }]
-    search = request.form.get('')
+    
   }
   return render_template('pages/search_venues.html', results=response, search_term=request.form.get('search_term', ''))
 
